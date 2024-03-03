@@ -1,0 +1,104 @@
+.footers{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        color: white;
+
+    }
+    footer{
+        width: 1600px;
+        height: 400px;
+        background: #DBFDA1;
+        padding-top: 50px;
+        
+        
+    }
+    .containersinfo{
+        width: 1600px;
+        height: 400px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        background-image: url(https://watermark.lovepik.com/photo/20211209/large/lovepik-pea-picture_501732626.jpg
+)
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.2px;
+
+    }
+    .footer-content{
+        width: 33.3%;
+    }
+    h3{
+        font-size: 28px;
+        margin-bottom: 15px;
+        text-align: center;
+        position: relative;
+        top: 60px;
+        color: black;
+    }
+    .footer-content p{
+        width:190px;
+        margin: auto;
+        padding: 7px;
+        position: relative;
+        top: 60px;
+        color: #043701;
+    }
+    .footer-content ul{
+        text-align: center;
+    }
+    .list{
+        padding: 0;
+    }
+    .list li{
+        width: auto;
+        text-align: center;
+        list-style-type:none;
+        padding: 7px;
+        position: relative;
+        top: 60px;
+
+    }
+    .list li::before{
+        content: '';
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 100%;
+        width: 0;
+        height: 2px;
+        background: #f18930;
+        transition-duration: .5s;
+    }
+    .list li:hover::before{
+        width: 70px;
+    }
+    .social-icons{
+        text-align: center;
+        padding: 0;
+    }
+    .social-icons li{
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+        position: relative;
+        top: 70px;
+    }
+    .social-icons i{
+        color: #043701;
+        font-size: 25px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    a:hover{
+
+
+        color: #A4DC02;
+    }
+    .social-icons i:hover{
+        color: #A4DC02;
+    }

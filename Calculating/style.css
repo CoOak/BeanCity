@@ -1,0 +1,234 @@
+html,
+body {
+  position: relative;
+}
+
+.main-page {
+  position: relative;
+  height: 100vh;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+swiper-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+
+  object-fit: cover;
+}
+
+/* ///////////////navbar/////////// */
+
+.nav-bar {
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.492) !important;
+}
+
+.logo {
+  height: 70px;
+}
+
+.brand_name {
+  color: #b0d68e;
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: bold !important;
+  font-size: 20px !important;
+}
+
+.pal_sey {
+  border-right: 0.5px solid rgb(187, 187, 187);
+}
+
+/* //////////pal.html////////// */
+
+swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.PmySwiper {
+  height: 100%;
+  width: 100%;
+}
+
+.PmySwiper2 {
+  height: 20%;
+  width: 40%;
+  box-sizing: border-box;
+  padding: 10px 0 10px 0;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.PmySwiper2 swiper-slide {
+  width: 15%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.PmySwiper2 .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+swiper-slide img {
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pal-corousal {
+  height: 110%;
+}
+
+/* //////////////// */
+
+.road a {
+  text-decoration: none;
+  color: #e2e2e2;
+}
+
+.pal-menu {
+  border-right: 0.1px solid rgb(233, 233, 233);
+}
+
+.pal-item {
+  width: 155px;
+  height: 38px;
+  padding-top: 9px;
+  border-radius: 20px;
+  padding-left: 20px;
+
+  margin-bottom: 10px;
+  background-color: transparent;
+  overflow: hidden;
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 300ms ease;
+}
+
+.pal-item::before {
+  border-bottom: 1px solid gray;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 160px;
+  height: 150px;
+  border-radius: 40%;
+  background-color: #b0d68e;
+  top: 100%;
+  left: 0;
+  transition: 500ms ease;
+}
+
+.pal-item:hover {
+  color: #ffffff !important;
+
+  letter-spacing: 3px;
+}
+
+.pal-item:hover::before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pal-item.active {
+  background-color: #b0d68e;
+
+  letter-spacing: 2px;
+}
+
+.pal-item a {
+  text-decoration: none;
+  color: #000;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+/*////////////who we are//////////*/
+
+.whoImg {
+  height: 500px;
+}
+
+.whoWe {
+  height: 70vh;
+}
+.palList_img {
+  text-align: center;
+}
+
+.palList_img img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 5px solid #b0d68e;
+}
+
+/* /////////////pesticide//////////// */
+
+.pesImg {
+  height: 150px;
+}
+
+.pesTitle {
+  font-weight: bold;
+}
+
+/* ///////////pesticideDetail////////// */
+
+.pdetailImg {
+  height: 550px;
+}
+
+.pdetailTable table tr th {
+  width: 160px;
+  vertical-align: initial;
+  padding: 10px 0;
+
+  font-size: 15px;
+}
+
+.pdetailTable table tr td {
+  width: calc(100% - 130px);
+  word-break: break-all;
+
+  padding: 10px 0;
+  font-size: 15px;
+}

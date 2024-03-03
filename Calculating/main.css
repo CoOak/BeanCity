@@ -1,0 +1,165 @@
+.topHeight {
+  padding-top: 150px;
+}
+.about_button {
+  --primary-color: #9bcf53;
+  --secondary-color: #fff;
+  --hover-color: #78a083;
+  --arrow-width: 15px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 25px 0 25px 0;
+  color: var(--secondary-color);
+  padding: 0.7em 2em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+}
+
+.about_button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+.about_button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.about_button:hover {
+  background-color: var(--hover-color);
+}
+
+.about_button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+.about_button:hover .arrow:before {
+  right: 0;
+}
+
+.loginbtn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+  background-color: #b0d68e;
+  padding: 0.7em 1.8em;
+  border: none;
+  border-radius: 30% 0 30% 0;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.loginbtn span:not(:nth-child(6)) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 30px;
+  width: 30px;
+  background-color: #92b375;
+  border-radius: 50%;
+  transition: 0.6s ease;
+}
+
+.loginbtn span:nth-child(6) {
+  position: relative;
+}
+
+.loginbtn span:nth-child(1) {
+  transform: translate(-3.3em, -4em);
+}
+
+.loginbtn span:nth-child(2) {
+  transform: translate(-6em, 1.3em);
+}
+
+.loginbtn span:nth-child(3) {
+  transform: translate(-0.2em, 1.8em);
+}
+
+.loginbtn span:nth-child(4) {
+  transform: translate(3.5em, 1.4em);
+}
+
+.loginbtn span:nth-child(5) {
+  transform: translate(3.5em, -3.8em);
+}
+
+.loginbtn:hover span:not(:nth-child(6)) {
+  transform: translate(-50%, -50%) scale(4);
+  transition: 1.5s ease;
+}
+
+.slider {
+  position: absolute;
+  margin-top: -280px;
+  z-index: 100;
+  overflow: hidden;
+  width: 98.5%;
+  /* Adjust as needed */
+  height: 300px;
+  /* Adjust slide height */
+}
+
+.slides {
+  display: flex;
+  animation: moveSlideshow 40s linear infinite alternate;
+  /* Adjust duration as needed */
+}
+
+.slide {
+  flex: 0 0 10%;
+  /* Each slide takes 10% of the container width */
+  background-color: #16161662;
+  /* Customize slide background color */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-left: 1px solid lightcyan;
+  text-align: center;
+  padding: 15px 70px 15px 70px;
+}
+
+@keyframes moveSlideshow {
+  0% {
+    transform: translateX(0%);
+  }
+
+  50% {
+    transform: translateX(-150%);
+  }
+
+  100% {
+    transform: translateX(-300%);
+  }
+}
+
+.whoImg img {
+  height: 450px;
+}
